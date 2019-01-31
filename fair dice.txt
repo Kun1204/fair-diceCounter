@@ -1,0 +1,19 @@
+	 int[ ] diceCounter = new int[6];
+	 
+	 int NUM_ROLLS  = 1000000;
+	 float average = (float)NUM_ROLLS / 6.0f;
+	 
+	 for (int i =0; i<NUM_ROLLS; i++)
+	 {
+		int number = (int)(Math.random() * 5.999999);
+		diceCounter[number]++;
+	  
+		System.out.println("one: " + diceCounter[0] + " " + (((float)diceCounter[0]-average) / average) * 100.0f + "%");
+		System.out.println("two: " + diceCounter[1] + " " + (((float)diceCounter[1]-average) / average) * 100.0f + "%");
+		System.out.println("three: " + diceCounter[2] + " " + (((float)diceCounter[2]-average) / average) * 100.0f + "%");
+		System.out.println("four: " + diceCounter[3] + " " + (((float)diceCounter[3]-average) / average) * 100.0f + "%");
+		System.out.println("five: " + diceCounter[4] + " " + (((float)diceCounter[4]-average) / average) * 100.0f + "%");
+		System.out.println("six: " + diceCounter[5] + " " + (((float)diceCounter[5]-average) / average) * 100.0f + "%");
+	 }
+	 }
+  	}
